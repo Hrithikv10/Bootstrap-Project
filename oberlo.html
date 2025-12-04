@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oberlo - Online Car Showroom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+.bg
+    {
+    background-image: url('images/banner-bg.png');
+    width: 100%;
+    height: 800px;
+    background-size: fill;
+    padding-top: 20px;
+    padding-left: 0.1rem;
+    padding-right: 0.5rem;
+    }
+.navbar-brand
+    {
+    margin-top: -0.2rem;
+    }
+
+
+.banner_main
+    {
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 90px;
+    margin-top: 70px;
+}
+.banner
+    {
+    width: 100%;
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 70px;
+}
+    .banner_text
+    {
+    width: 100%;
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.form-group
+{
+    margin-bottom: 1rem;
+    display: flex;
+    width: 85%;
+    margin: auto;
+    float: left;
+}
+.mail {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    padding: 0px 20px 0px 20px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-top: 20px;
+    border: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.bt {
+    width: 60px;
+    float: left;
+    padding-top: 20px;
+    position: relative;
+    left: -52px;
+}
+
+.bt a {
+    width: 100%;
+    float: left;
+    color: white;
+    font-size: 16px;
+    padding: 14px 5px 13px 10px;
+    background-color: #fc9d22;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.about_main
+    {
+    width: 100%;
+    padding-top: 0px;
+    margin-top:60px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.about_text
+{
+    width: 100%;
+    font-size: 19px;
+    margin: 0px;
+    padding-top: 40px;
+    text-align: justify;
+    line-height:35px;
+}
+.btn
+{
+padding-top:50px;
+}
+.btn a
+    {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    color: #fefefd;
+    background-color: #fc9d22;
+    padding: 10px;
+    border-radius: 6px;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+}
+.arrow_icon
+{
+    padding-left: 10px;
+}
+.model
+    {
+    width: 100%;
+    font-weight: bold;
+    text-align:center;
+    padding-top:90px;
+    display:flex;
+    }
+.model2
+{
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 10px #e9e9e8;
+    margin-top: 60px;
+}
+.model2_h
+{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 60px;
+}
+.number
+{
+    padding-right: 5px;
+    color: #e9e9e8;
+}
+.model2_text
+    {
+    width: 100%;
+    font-size: 19px;
+    color: #4e4e4e;
+    margin-top: 30px;
+    text-align:justify;
+    }
+.price_main
+{
+    width: 100%;
+    display: flex;
+    padding-top:10px;
+    font-size:18px;
+}
+    .read_btn {
+    width: 250px;
+    float: left;
+    margin-left:150px;
+}
+
+.read_btn a {
+    width: 70%;
+    float: left;
+    font-size: 18px;
+    color: #fefefd;
+    background-color: #fc9d22;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+    .blog_h
+{
+    font-weight:bold;
+    width:100%
+}
+    .blog_img
+{
+    width: 100%;
+    text-align: center;
+}
+    .btn_main {
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+
+.price_text {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.price_text p {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color:white;
+    text-align: center;
+    background-color: #fc9d22;
+    padding: 10px;
+    text-decoration:none;
+}
+    .price_text.active p
+     {
+    color: #000000;
+    background-color: #fefefd;
+    box-shadow: 0px 5px 20px 3px #e9e9e8;
+}
+.blog_box {
+    width: 100%;
+    height: auto;
+}
+
+.blog_text
+{
+    width: 100%;
+    font-size: 24px;
+    padding: 0px 0px 10px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.p_text
+{
+    width: 75%;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align:justify;
+}
+        .read_bt
+{
+    padding-top:20px;
+    width: 250px;
+    float: left;
+    margin-left:130px;
+}
+
+.read_bt a {
+    width: 70%;
+    float: left;
+    font-size: 18px;
+    color: white;
+    background-color: #fc9d22;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+    .box_main {
+    width: 90%;
+    float: right;
+    background-color: #ffffff;
+    padding: 0px 50px 0px 50px;
+    box-shadow: 0px 0px 18px -6px;
+    margin-bottom: 10px;
+}
+
+.customer_text {
+    width: 100%;
+    font-size: 14px;
+    color: #737372;
+    margin: 0 auto;
+}
+
+.quick_icon {
+    text-align: center;
+    position: relative;
+    top: 45px;
+}
+
+.customer_main {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    padding-bottom:30px;
+
+}
+
+.customer_left {
+    width: 30%;
+    float: left;
+}
+
+.customer_right {
+    width: 100%;
+    float: left;
+    margin-top: 0px;
+    padding-left: 200px;
+}
+
+.customer_name {
+    width: 100%;
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+}
+.customer_text {
+    width: 100%;
+    padding-top:20px;
+    float: left;
+    font-size: 16px;
+    margin: 0px;
+    line-height: 30px;
+
+}
+
+.customer_img {
+    position: absolute;
+    top: 4300px;
+    left: 200px;
+}
+    .contact_section
+    {
+    margin-top:100px;
+    width: 100%;
+    float: left;
+    background-color:black;
+    border-radius:500px;
+    height: auto;
+    background-size: 100%;
+}
+.contact_section2
+{
+    width: 50%;
+    margin: 0 auto;
+}
+    .mail_section
+     {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+    .mail_text
+    {
+    width: 80%;
+    font-size: 16px;
+    color: white;
+    border-bottom: 1px solid white !important ;
+    background-color: transparent;
+    padding: 14px 15px 5px 0px;
+    margin-bottom:15px;
+    border: 0px;
+}
+    .massage-bt
+    {
+    width: 80%;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    border-bottom: 1px solid white !important;
+    background-color: transparent;
+    padding: 20px 15px 0px 0px;
+    margin-bottom: 10px;
+    border: 0px;
+}
+    .map_btn_main {
+    width: 100%;
+    float: right;
+}
+
+.send_bt {
+    width: 160px;
+    float: right;
+}
+
+.send_bt a {
+    width: 100%;
+    margin-left:-200px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border: 3px solid orange;
+    padding: 10px;
+    margin-top: 30px;
+    display: block;
+    font-weight: bold;
+    text-decoration:none;
+    border-radius:5px;
+}
+.send_bt a:hover {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+    .location_main {
+    margin-left:-30px;
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    text-align: center;
+
+}
+    .location_main ul
+     {
+    margin: 10px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.location_main li {
+    float: left;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+.location_main a
+{
+    color: #ffffff;
+    text-decoration:none;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<!--navbar-->
+
+<div class="bg">
+<div class="container bg-white mx-auto " style="width:70%;">
+    <ul class="nav nav-pills nav-fill" style="height:50px">
+        <li class="nav-item">
+    <a class="nav-link mt-1 text-dark" href="#header">HOME</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link mt-1 text-dark" href="#model">MODEL</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link mt-1 text-dark" href="#about" >ABOUT</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link navbar-brand text-white fs-3 fw-bold p-2" style="background-color: #fc9d22">OB<span class="text-dark">erlo</span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link mt-1 text-dark" href="#price">PRICE</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link mt-1 text-dark" href="#test">TESTIMONY</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link mt-1 text-dark" href="#contact" >CONTACT</a>
+  </li>
+</ul>
+</div>
+
+
+
+<!--header-->
+
+<div class="container-fluid text-white mt-5 "id="header">
+    <div class="row">
+        <div class="col-6 mt-5">
+             <div class="banner_main">
+                <h1 class="banner">New<br> Model Cars</h1>
+                <p class="banner_text">Enter the car name</p>
+                <div class="form-group">
+                <input type="text" class="mail" placeholder="Search here">
+                <div class="bt"><a href="#"><i class="fa-solid fa-circle-arrow-right"></i></a></div>
+            </div>
+        </div>
+        </div>
+        <div class="col-6 mt-5 ">
+            <img src="images/banner-img.png" width="100%" style="height-auto:100px">
+        </div>
+    </div>
+</div>
+
+
+
+<!--about-->
+
+    <div class="container-fluid bg-white mt-5" id="about">
+        <div class="row">
+            <div class="col-6 mt-5">
+                <img src="images/about-img.png" style="float:left;padding-top:60px;">
+            </div>
+            <div class="col-6 mt-5">
+                <div class="about_main">
+                <h1 class="about fw-bold">ABOUT SHOWROOM</h1>
+                    <div class="border border-4 border-warning w-50"></div>
+                <p class="about_text">When it comes to premium automobiles, nothing compares to the experience of stepping into one of the best luxury car showrooms in the world. These elite establishments offer an unparalleled selection of high-performance vehicles, each representing the pinnacle of engineering and design. From hypercars to bespoke grand tourers, these showrooms provide an immersive experience for automotive enthusiasts and collectors alike. The best luxury car showrooms in the world serve as more than just places to purchase a vehicle; they are destinations that showcase automotive excellence in its purest form.</p>
+                <div class="btn"><a href="#">Read More<span class="arrow_icon"><i class="fa fa-long-arrow-right"></i></span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--models-->
+
+    <div class="container" style="padding-top:70px" id="model">
+        <div class="row">
+            <div class="col-12" >
+                <h1 class="model">OUR NEW MODELS</h1>
+                    <div class="border border-4 border-warning w-25 ms-3"></div>
+            </div>
+        </div>
+        <div class="model2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="models_img"><img src="images/img-1.png"></div>
+                  </div>
+                  <div class="col-6">
+                     <h3 class="model2_h"><span class="number">01</span> LAMBORGHINI AVENTADOR</h3>
+                     <p class="model2_text">The 2019 Aventador powertrain hierarchy begins with a mid-mounted naturally aspirated 6.5-liter V-12 that develops 730 horsepower and 509 lb-ft of torque that is transmitted to the wheels via a seven-speed automated-manual transmission. This basic setup is shared among the three distinct variants, but the track-focused SVJ (which stands for Superveloce Jota) has various enhancements that unlock extra horsepower and torque that meets the pavement through all four wheels. </p>
+                     <div class="price_main d-flex">
+                        <p class="price_text"><span style="color: #fc9d22;">Price</span> $30000.00</p>
+                        <div class="read_btn"><a href="#">Read More<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                     </div>
+                  </div>
+               </div>
+        </div>
+        <div class="model2">
+               <div class="row">
+                  <div class="col-6">
+                     <div class="models_img"><img src="images/img-2.png"></div>
+                  </div>
+                  <div class="col-md-6">
+                     <h3 class="model2_h"><span class="number">02</span> FORD MUSTANG</h3>
+                     <p class="model2_text">The Ford Mustang is a 4-seater coupe known for its performance and iconic design. The 2024 model offers two engine options: a 2.3-litre turbocharged EcoBoost and a 5-litre naturally aspirated V8. It competes with luxury sports cars like the Porsche 718 Cayman and Jaguar F-TYPE. </p>
+                     <div class="price_main">
+                        <p class="price_text"><span style="color: #fc9d22;">Price</span> $20000.00</p>
+                        <div class="read_btn"><a href="#">Read More<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                     </div>
+                  </div>
+               </div>
+        </div>
+        <div class="model2">
+               <div class="row">
+                  <div class="col-6">
+                     <div class="models_img"><img src="images/img-3.png"></div>
+                  </div>
+                  <div class="col-md-6">
+                     <h3 class="model2_h"><span class="number">03</span> BMW</h3>
+                     <p class="model2_text">BMW offers a range of features across its vehicles, including the intuitive BMW Curved Display, advanced Parking Assistants and Driving Assistants for safety and convenience, and connected services through BMW ConnectedDrive. Luxury features can include a Head-Up Display, massage seats, and panoramic sunroofs, while some models also feature specific innovations like "CraftedClarity" Glass Applications and integrated iconic lights. </p>
+                     <div class="price_main">
+                        <p class="price_text"><span style="color: #fc9d22;">Price</span> $10000.00</p>
+                        <div class="read_btn"><a href="#">Read More<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                     </div>
+                  </div>
+               </div>
+        </div>
+    </div>
+
+
+
+<!--price-->
+
+    <div class="container" style="padding-top:100px;" id="price">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="blog_h">FEATURED VEHICLES</h1>
+                <div class="border border-3 border-warning w-25 ms-4"></div>
+            </div>
+        </div>
+        <div class="row" style="padding-top:50px;">
+            <div class="col-4">
+             <div class="blog_img"><img src="images/img-4.png"></div>
+                     <div class="btn_main">
+                        <div class="price_text"><p>Price $ 30000.0</p></div>
+                     </div>
+                 <div class="blog_box">
+                        <h3 class="blog_text" style="text-transform:uppercase">classic Cadillac</h3>
+                        <p class="p_text">The 1957 Cadillacs were powered by a V-8 engine with a 365 CID displacement, producing 300 horsepower in standard models and 325 horsepower in Eldorado models Car.</p>
+                     </div>
+                     <div class="read_bt"><a href="#">Read More<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                  </div>
+            <div class="col-4">
+             <div class="blog_img"><img src="images/img-5.png"></div>
+                     <div class="btn_main">
+                        <div class="price_text"><p>Price $ 45000.0</p></div>
+                     </div>
+                 <div class="blog_box">
+                        <h3 class="blog_text" style="text-transform:uppercase">BMW M4 Competition Coupe</h3>
+                        <p class="p_text">Powered by a 3.0-liter M TwinPower Turbo inline 6-cylinder petrol engine. a high-performance version of the BMW 4 Series coupe developed by BMW M.Steptronic models.</p>
+                     </div>
+                     <div class="read_bt"><a href="#">Read More<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                  </div><div class="col-4">
+             <div class="blog_img"><img src="images/img-6.png"></div>
+                 <div class="btn_main">
+                    <div class="price_text"><p>Price $ 40000.0</p></div>
+                 </div>
+                 <div class="blog_box">
+                        <h3 class="blog_text">BMW</h3>
+                        <p class="p_text">It's powered by a high-performance M TwinPower Turbo inline 6-cylinder petrol engine, producing up to 390 kW (530 hp) in the M xDrive version. The M4 is part of BMW's legendary M series.</p>
+                     </div>
+                     <div class="read_bt"><a href="#">Read More<span class="arrow_icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></div>
+                  </div>
+        </div>
+    </div>
+
+
+
+<!--testimonials-->
+
+    <div class="container" id="test">
+        <div class="row">
+            <div class="col-12" style="padding-top:50px;">
+                <h1 class="blog_h fw-bold text-center" style="width:100%;padding-top:80px">TESTIMONIALS</h1>
+            </div>
+            <div class="col-12 " style="padding-top:100px;">
+                <div class="box_main">
+                   <div class="customer_main">
+                      <div class="customer_left">
+                         <div class="customer_img"><img src="images/client.png"></div>
+                      </div>
+                      <div class="customer_right">
+                         <h3 class="customer_name">ARUN BHASKAR</h3>
+                         <p class="customer_text">I was looking for a pre ownerd vehicle on the lot. I was looking for a car with low mileage and had my type of interest in vehicles. I was placed in the perfect car. It looked brand new being a used car and my customer service rep handled me very well. He was very knowledgeable about the vehicles there, kind and knew just what I wanted based on my interests. I walked out happily and appreciate the great customer service.</p>
+                         <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--contact-->
+    <div class="contact_section" id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <h1 class="text-center text-white" style="padding-top:100px;font-weight:bold;font-family:helvetica">GET IN TOUCH</h1>
+                </div>
+            </div>
+            <div class="contact_section2">
+                <div class="mail_section">
+                    <input type="text" class="mail_text" placeholder="Name" name="Name">
+                      <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number">
+                      <input type="text" class="mail_text" placeholder="Email" name="Email">
+                      <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Message"></textarea>
+                    <div class="map_btn_main">
+                     <div class="send_bt"><a href="">SEND NOW</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="location_main">
+                  <ul type="none">
+                     <li><a href="#"><i class="fa-solid fa-phone"></i><span style="padding-left:15px;">(+91) 8848809648</span></a></li>
+                     <li><a href="#"><i class="fa-solid fa-envelope"></i><span style="padding-left:15px;">oberlo@gmail.com</span></a></li>
+                  </ul>
+            </div>
+
+
+<!--copyright -->
+      <div style="width:100%;float:left;text-align:center;margin:50px 0px 0px 0px;color:white;font-size:20px;">
+         <div class="container">
+            <p class="copyright_text">2025 All Rights Reserved.Oberlo - Online Car Showroom</p>
+         </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

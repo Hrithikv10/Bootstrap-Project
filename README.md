@@ -25,7 +25,7 @@ This project is suitable for front-end portfolio display, practice, or learning 
 The project uses:
 
 - **HTML**
-- **Bootstrap 4 / 5** (CSS & JS)
+- **Bootstrap 5** (CSS & JS)
 - **CSS** (custom styling as needed)
 
 No backend or server is required — this is a static front-end project.
